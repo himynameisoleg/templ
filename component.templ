@@ -1,0 +1,27 @@
+package main
+
+import "encoding/json"
+
+script withParameters(a string, b string, c int) {
+console.log(a, b, c);
+}
+
+script withoutParameters() {
+alert("hello");
+}
+
+templ Button(text string) {
+	<button onClick={ withParameters("test", text, 123) } onMouseover={ withoutParameters() } type="button">
+		{ text }
+	</button>
+}
+
+func countriesJSON() string {
+	countries := []string{"Czech Republic", "Slovakia", "United Kingdom", "Germany", "Austria", "Slovenia"}
+	bytes, _ := json.Marshal(countries)
+	return string(bytes)
+}
+
+templ SearchBox() {
+	<search-webcomponent suggestions={ countriesJSON() }></search-webcomponent>
+}
