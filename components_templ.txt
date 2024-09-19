@@ -1,0 +1,4 @@
+<div>Global: 
+</div><div>User: 
+</div>
+<form action=\"/\" method=\"POST\"><div><button type=\"submit\" name=\"global\" value=\"global\">Global</button></div><div><button type=\"submit\" name=\"user\" value=\"user\">User</button></div></form>
