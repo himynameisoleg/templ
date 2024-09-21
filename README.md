@@ -3,8 +3,9 @@
 
 Stack to learn some modern web application architecture:
 
-- [ ] TEMPL
-- [ ] Htmx | Alpines
+- [ ] gin
+- [ ] Templ
+- [ ] HTMX
 - [ ] sqlc
 - [ ] pgx
 
